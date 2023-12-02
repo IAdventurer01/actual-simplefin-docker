@@ -1,0 +1,13 @@
+services:
+  actualbudget:
+    image: actualbudget/actual-server:latest-alpine
+    container_name: actualbudget
+    restart: unless-stopped
+    ports: [5006:5006]
+    volumes: [./data:/data]
+  simplefin:
+    build: docker/simplefin
+    container_name: actualbudget_simplefin
+    restart: unless-stopped
+    environment:
+      actual:serverUrl: http://actualbudget:5006
