@@ -34,4 +34,11 @@ The main differences will be that you will be accessing the app through docker.
     ```shell
     docker exec -it actualbudget_simplefin node app.js
     ```
+  
+## Common errors
+### rest.split('@')
+Your SimpleFin Token has expired.  Please make a new one and try again fresh.
+
+### Database is out of sync with migrations on a fresh budget
+This appears to be an issue with Actual v23.12.0.  If you are encountering this issue, modify the docker-compose file to pull the image **actualbudget/actual-server:23.11.0-alpine**
 
