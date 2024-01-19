@@ -21,4 +21,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-  0 0  *   *   *     bash -c "node /opt/actual-simplefin-sync/app.js"
+  0 0  *   *   *     sh -c "node /opt/actual-simplefin-sync/app.js"
