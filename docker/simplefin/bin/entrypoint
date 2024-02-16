@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Let's pull the latest API on restart. Solves a lot of reported errors
+sh -c "cd /opt/actual-simplefin-sync && npm update"
+
+# Start cron
+/usr/sbin/crond -f -d 0
