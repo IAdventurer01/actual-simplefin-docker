@@ -1,7 +1,10 @@
 # ActualBudget with SimpleFin Sync
 This project is made to simplify the setup of a dockerized version of ActualBudget with included bank syncing courtesy of SimpleFin.
 
-When properly setup, it will run ActualBudget locally with a SimpleFin sync that runs once a day at midnight.  You can adjust the sync by manipulating the crontab in ./docker/simplefin/etc/crontab 
+When properly setup, it will run ActualBudget locally with a SimpleFin sync that runs once a day at midnight.  You can adjust the sync by manipulating the crontab in ./docker/simplefin/etc/crontab
+
+> [!TIP]
+> ActualBudget now includes SimpleFin sync built-in as an expermental feature.  This project still allows the automation of syncs without user input, but for most users the built-on sync will be the best supported option.
 
 ## Other resources
 It is highly recommended you familiarize yourself with the documentation of both ActualBudget and Actual-SimpleFin-Sync.  Documentation for both linked below for your convenience.
